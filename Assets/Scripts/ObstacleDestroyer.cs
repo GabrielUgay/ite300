@@ -2,18 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ObstacleDestroyer : MonoBehaviour
+public class obstacledestroyer : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -21,10 +21,10 @@ public class ObstacleDestroyer : MonoBehaviour
         {
             Destroy(collision.gameObject);
         }
-
         if (collision.gameObject.CompareTag("Ground"))
         {
             Destroy(collision.gameObject);
         }
     }
 }
+
